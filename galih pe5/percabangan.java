@@ -11,7 +11,7 @@ public class percabangan {
 
         //hitung
 
-        if (nilai>=0 && <=60){
+        if (nilai > = 0 && <=60){
             System.out.println("Tidak Lulus");
         }
         else if (nilai>=61 && <=75){

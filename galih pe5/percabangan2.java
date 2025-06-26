@@ -2,32 +2,34 @@ import java.util.Scanner;
 
 
 public class percabangan2 {
+    double gajipokok=0;
+    double tunjangananak=0;
+    double tunjanganistri=0;
+    double totalgaji=0;
+    double pph;
+    double pendapatangaji;
     public static void main(String[] args) {
         Scanner input= new Scanner(System.in);
         //input
         System.out.print("Masukkan nama Karyawan:");
-        string nama=input.nextLine();
+        String nama=input.nextLine();
         
         System.out.print("JK:");
-       string jk=input.nextLine();
+        String jk=input.nextLine();
 
         System.out.print("Gol:");
-        string Gol=input.nextLine();
+        String Gol=input.nextLine();
 
         System.out.print("Jumlah anak:");
         int jmlanak=input.nextInt();
 
         //proses
 
-        double gajipokok;
-        double tunjangananak;
-        double tunjanganistri;
-        double totalgaji;
-        double pph;
-        double pendapatangaji;
+        
 
         if (Gol == "A"){
             gajipokok=600000;
+            
         }
         else if (Gol == "B"){
             gajipokok=800000;
@@ -55,13 +57,12 @@ public class percabangan2 {
             tunjangananak=800000;
         }
 
-        totalgaji=gajipokok+tunjanganistri+tunjangananak
-        pph=(float)0.05*gajipokok
+        totalgaji=gajipokok+tunjanganistri+tunjangananak;
+        pph=0.05*gajipokok;
+
+
+        //cetak
         
-            
-
-
-
         input.close();
     }
 }
